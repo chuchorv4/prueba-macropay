@@ -1,6 +1,6 @@
 <template>
   <b-container class="main">
-
+    <h1>About</h1>
   </b-container>
 </template>
 
