@@ -34,6 +34,12 @@
 export default {
   data() {
     return {
+      itemSelected: {}
+    }
+  },
+  async asyncData({ $axios }) { // Fetch data from Server API
+    // call to API
+    return { // data dump for test
       items: [
         {
           image: 'https://via.placeholder.com/180',
@@ -96,8 +102,7 @@ export default {
           count: 1,
           description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit reprehenderit voluptate perspiciatis sunt error incidunt adipisci quod recusandae vero doloribus molestiae repellat ab dolore nisi fuga, ut minima temporibus tempora.'
         }
-      ],
-      itemSelected: {}
+      ]
     }
   },
   filters: {
