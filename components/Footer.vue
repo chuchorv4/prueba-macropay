@@ -7,8 +7,17 @@
         <p>{{ phone }}</p>
         <p v-if="email"><a :href="'mailto:'+email">{{ email }}</a></p>
       </b-col>
-      <b-col cols="12" lg="4">
-        <div class="mapouter"><div class="gmap_canvas"><iframe width="300" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=monumento%20patria&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:180px;width:300px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:180px;width:300px;}</style></div></div>
+      <b-col cols="12" lg="4" class="footer-map">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe width="300" height="180" id="gmap_canvas" src="https://maps.google.com/maps?q=monumento%20patria&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+              <a href="https://putlocker-is.org"></a>
+            <br>
+            <style>.mapouter{position:relative;text-align:right;height:180px;width:300px;}</style>
+              <a href="https://www.embedgooglemap.net"></a>
+            <style>.gmap_canvas {overflow:hidden;background:none!important;height:180px;width:300px;}</style>
+          </div>
+        </div>
       </b-col>
       <b-col cols="12" lg="4">
         <b-row class="justify-content-md-center">
@@ -70,5 +79,14 @@ export default {
   img {
     margin: auto;
     display: block;
+  }
+  @media only screen and (max-width: 996px) {
+    .footer-map {
+      display: none;
+    }
+    .icon-rs {
+      font-size: 28px;
+      line-height: 20px;
+    }
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <b-navbar toggleable="lg" type="light" variant="light" sticky="true">
+  <b-navbar toggleable="lg" type="light" variant="light" :sticky="true">
     <b-navbar-brand href="/">Macromedia</b-navbar-brand>
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
     <b-collapse id="nav-collapse" is-nav>
