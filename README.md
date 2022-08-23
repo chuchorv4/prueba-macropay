@@ -17,9 +17,9 @@ $ npm run start
 $ npm run generate
 ```
 
-Proyecto prueba reclutamiento macropay
+## Proyecto prueba reclutamiento macropay
 
-version producion en:
+version produccion en:
 
 Principal
 http://74.208.121.129/
@@ -33,3 +33,8 @@ http://74.208.121.129/about
 Contacto
 http://74.208.121.129/contact
 
+
+# tecnologias usadas
+
+Nuxt.js (Vue.js)
+Bootstrap
